@@ -67,6 +67,11 @@ ul{
   font-size:1rem;
   display:none
 }
+/* styling of menu btn */
+#menu-icon{
+  cursor: pointer;
+}
+/*  end of styling of menu btn*/
 /* --------------- End of Navbar ---------------- */
 /* --------------- Hero ---------------- */
 .hero {
@@ -275,3 +280,118 @@ ul{
 }
 
 /* --------------- End of Cart ---------------- */
+/* --------------- start of Menu ---------------- */
+.menu-overlay{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transition: var(--mainTransition);
+  /* background: rgb(240, 157, 81, 0.5); */
+  z-index: 2;
+  visibility: hidden;
+}
+ .menu{
+
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 50%;
+  height: 100%;
+  overflow: none;
+  z-index: 3;
+  background: rgb(231, 226, 221);
+  padding: 1.5rem;
+  transition: var(--mainTransition);
+   transform: translateX(0%);   
+} 
+.menu-item > a{
+  display:block;
+  font-size:1.4rem;
+  text-decoration: none;
+  color:rgb(67, 4, 4);
+  font-weight: 400;
+  margin-bottom:10px;
+  padding:10px 12px;
+  background-color: var(--primaryColor);
+}
+.menu-item > a:last-child{
+  margin-bottom:0px;
+}
+.menu-item > a:first-child{
+  margin-top:24px;
+}
+.menu-item > a:hover{
+  background-color: #ea7b13;
+  color:white;
+}
+.close-cart-in-menu{
+  font-size: 1.7rem;
+  cursor: pointer;
+  position:fixed;
+  right:2vw;
+
+}
+.showMenu {
+  transform: translateX(0%);
+  animation:reverse;
+}
+.transparentMenu {
+  visibility: visible;
+  animation-duration: normal;
+  animation-delay: 0ms;
+}
+
+/* --------------- end of Menu ---------------- */
+/* --------------- start of login ---------------- */
+input:invalid{
+  /* outline:3px solid red; */
+  border:none;
+  outline:2px solid darkred;
+}
+#login{
+  background-color: rgba(250, 61, 149, 0.598);
+}
+#login h1{
+  text-align: center;
+
+
+}
+form#login{
+  max-width:400px;
+  position:fixed;
+  top:0;
+  left:45%;
+  visibility: hidden;
+  z-index:4;
+  margin:auto;
+  padding:16px;
+  border:1px solid black;
+  border-radius: 1px;
+
+}
+#login label{
+  display: block;
+  font-weight: 500px;
+
+}
+#login input,#login textarea,#login button{
+  width:100%
+
+}
+#login button{
+  margin-top:18px;
+  border-radius: 3px;
+  background: darkgreen;
+  color:white;
+  border:1px solid black;
+  padding:9px 5px;
+  cursor: pointer;
+}
+#login button:hover{
+  box-shadow: 0 0 4px green;
+  text-shadow:3px 3px 12px black;
+  font-weight: 600;
+}
+/* --------------- end of login ---------------- */

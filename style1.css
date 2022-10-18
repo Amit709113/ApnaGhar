@@ -1,0 +1,55 @@
+:root{
+    --local-color:red;
+    /* --local-font:Verdana; */
+
+
+}
+*{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    box-sizing: border-box;
+}
+
+input:invalid{
+    /* outline:3px solid red; */
+    border:none;
+    outline:2px solid darkred;
+}
+#login{
+    background-color: rgba(250, 61, 149, 0.598);
+}
+#login h1{
+    text-align: center;
+
+
+}
+form#login{
+    max-width:400px;
+    margin:auto;
+    padding:16px;
+    border:1px solid black;
+    border-radius: 1px;
+
+}
+#login label{
+    display: block;
+    font-weight: 500px;
+
+}
+#login input,#login textarea,#login button{
+    width:100%
+
+}
+#login button{
+    margin-top:18px;
+    border-radius: 3px;
+    background: darkgreen;
+    color:white;
+    border:1px solid black;
+    padding:9px 5px;
+    cursor: pointer;
+}
+#login button:hover{
+    box-shadow: 0 0 4px green;
+    text-shadow:3px 3px 12px black;
+    font-weight: 600;
+}

@@ -9,6 +9,12 @@ const cartItems =document.querySelector(".cart-items");
 const cartTotal=document.querySelector(".cart-total");
 const cartContent =document.querySelector(".cart-content");
 const productsDOM=document.querySelector(".products-center");
+/*strt of my own  */
+const menuBtn=document.querySelector(".menu-btn");
+const closeMenuBtn=document.querySelector(".close-cart-in-menu");
+const menuDom=document.querySelector(".menu");
+// const clearMenuBtn=document.querySelector(".clear-menu");
+/*end of my own  */
 
 //cart
 let cart=[];
@@ -126,6 +132,18 @@ class UI{
         this.populateCart(cart);
         cartBtn.addEventListener('click',this.showCart);
         closeCartBtn.addEventListener('click',this.hideCart);
+        /*done by own */
+        const menuOverlay=document.querySelector(".menu-overlay");
+        menuBtn.addEventListener('click',function () {
+          menuOverlay.classList.add('transparentMenu');
+          menuDom.classList.add('showMenu');  
+            
+        })
+        closeMenuBtn.addEventListener('click',function(){
+            menuOverlay.classList.remove('transparentMenu');
+            menuDom.classList.remove('showMenu');
+        })
+        /*done by own end */
     }
     populateCart(cart){
         cart.forEach(item=>this.addCartItem(item));

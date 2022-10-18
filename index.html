@@ -14,8 +14,9 @@
     <!-- navbar -->
     <nav class="navbar">
         <div class="navbar-center">
-            <span class="nav-icon">
+            <span  class="menu-btn nav-icon">
                 <i class="fas fa-bars"></i>
+                
             </span>
             <h1 id="logo">Apna Ghar</h1>
             <div class="cart-btn">
@@ -95,6 +96,58 @@
         </div>
     </div>
     <!-- end of cart -->
+    <!-- menu -->
+    <div class="menu-overlay">
+        <div class="menu">
+            <span class="close-cart-in-menu">
+                <i class="fas fa-window-close"></i>
+             </span>
+             <h2>Menu </h2>
+             
+             <div class="menu-item" >
+                <a href="#dashboard">dashboard</a>
+                <a href="form1.html">login</a>
+                <a href="#logout">logout</a>
+                <a href="#About">About</a>
+                <a href="#contect">contect us</a>
+                
+            </div>
+        </div>
+    </div>
+    
+    <!-- end of menu -->
+    <!-- start of login -->
+    <div>
+       
+        <form action="" name="login" id="login" method="Post">
+            <h1>login</h1>
+            <div>
+                <label for="username">Username</label>
+                <input type="text" name="username" id="username" required autocomplete="off">
+            </div>
+            <div>
+                <label for="password">Password</label>
+                <input type="password" name="password" id="password" required autocomplete="off">
+            </div>
+            <!-- <div>
+                <label for="email">email</label>
+                <input type="email" name="email" id="email" required autocomplete="off">
+            </div>
+            <div>
+                <label for="mobile">Mobile.No : </label>
+                <input type="tel" name="mobile"id="mobile" required autocomplete="off">
+            </div> -->
+            <button type="submit">log in </button>
+            <div>forgot password</div>
+            <div>
+                don't have account 
+                create Account
+            </div>
+            
+        </form>
+    </div>
+    <!-- end  of login -->
+
     <script src="script.js"></script>
 </body> 
 </html>
